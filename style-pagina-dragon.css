@@ -11,7 +11,7 @@
 
 /* Estilos generales del cuerpo */
 body {
-  background-image: url("Imagenes/fondo2.png");
+  background-image: url("Imagenes/Fondo-Kamehouse.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -46,6 +46,7 @@ main {
   background-color: var(--bg-primary);
   transition: width var(--transition-speed) ease;
   z-index: 2;
+  height: 100%;
 }
 
 /* Estilos de la lista de navegación */
@@ -154,18 +155,20 @@ main {
 
 /* Estilos de la información de la serie */
 .Informacion-Serie {
-  max-width: 60%;
+  width: 60%;
 }
 
 /* Estilos del título de la serie */
-.Informacion-Serie h1 {
+.Informacion-Serie h2 {
   font-size: 3rem;
   margin: 0;
   padding: 0;
+  margin-bottom: 0.5rem;
 }
 
 /* Estilos de la información de la serie */
 .serie-info {
+  font-weight: 500;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -202,8 +205,8 @@ main {
 /* Estilos del botón de la serie */
 .serie-button {
   margin-top: 1.5rem;
-  background-color: #00a3ff;
-  color: #ffffffd8;
+  background-color: #0077cc; 
+  color: #ffffff; 
   padding: 10px 20px;
   border: none;
   border-radius: 1rem;
@@ -212,19 +215,21 @@ main {
   font-weight: bold;
 }
 
+
 /* Estilos de la imagen de Goku */
 .imagen-goku {
-  max-height: 85vh; 
-  max-width: 85vw; 
-  width: auto;
+  width: 40vw;
   height: auto;
+  max-width: 100%;
+  max-height: 80vh;
 }
 
-/* Estilos del título h2 */
-h2 {
-  margin-top: 2rem;
-}
 
+.Galeria-Texto {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
 /* Estilos de la galería */
 .galeria {
   background-color: rgba(255, 255, 255, 0.2);
@@ -289,16 +294,49 @@ h2 {
   background-color: rgba(255, 255, 255, 0.1); 
 }
 
-/* Modificaciones para distintos dispositivos */
+.mobile-logo {
+  display: none;
+}
 
 /* Para dispositivos móviles o pantallas pequeñas */
 @media only screen and (max-width: 37.5rem) {
+
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    letter-spacing: 0.3ch;
+    width: auto;
+    padding: 0.5rem 1rem;
+    z-index: 999; 
+  }
+  
+  .mobile-logo a {
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+  }
+
+  .mobile-logo .nav-link svg {
+    fill: rgb(231, 212, 35); 
+    margin-right: 0.5rem; 
+  }
+
   .navbar {
     bottom: 0;
     width: 100vw;
     height: 5rem;
   }
 
+  /* Ocultar el logo existente en el navbar en dispositivos móviles */
   .logo {
     display: none;
   }
@@ -326,10 +364,17 @@ h2 {
   .imagen-goku {
     display: none;
   }
+
+  /* Establecer el ancho y margen de Informacion-Serie cuando la imagen se oculta */
+  .Informacion-Serie {
+    width: calc(100% - 2rem); 
+    margin: 0 1rem; 
+  }
 }
 
+
 /* Pantallas más largas */
-@media only screen and (min-width: 37.5rem) {
+@media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
     width: 5rem;

@@ -8,19 +8,17 @@
     <!--  Logo de la Página en el navegador  -->
     <link rel="icon" href="Imagenes/certificate-solid.svg" sizes="any" type="image/svg+xml">
     <meta name="description" content="Página principal de Dragon Ball. Puedes seleccionar tu serie o contenido favorito.">
-    <!-- Preload para CSS no crítico -->
+    <!-- Preload para CSS crítico -->
     <link rel="preload" href="style-pagina-dragon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <!-- Fuentes de Google Fonts preconnect -->
+    <!-- Consolidación de preconexiones -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- FontAwesome CDN preconnect -->
     <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
-    <!-- Fuentes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuentes de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <!-- FontAwesome Kit -->
     <script src="https://kit.fontawesome.com/d4aceda794.js" crossorigin="anonymous"></script>
-  </head>
+</head>
   
   <body>
     <!-- Barra de navegación -->
@@ -92,40 +90,54 @@
       </ul>
     </nav>
 
+
+    <!-- Nuevo logo para dispositivos móviles -->
+      <div class="mobile-logo">
+        <a href="PaginaPrincipal.html" class="nav-link">
+          <span class="link-text logo-text">EsferasOnline</span>
+          <!-- Icono del nuevo logo -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">
+            <!-- Path del nuevo logo -->
+            <path d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"/>
+          </svg>
+        </a>
+      </div>
+
+
     <!-- Contenido principal -->
     <main>
      <!-- Información de la serie -->
      <div class="Informacion-Serie">
-        <h1>DRAGON BALL</h1>
-          <h4 class="serie-info">
+        <h2>DRAGON BALL</h2>
+          <h3 class="serie-info">
             <span class="blanco">DURACIÓN: </span>
             <span class="gris"> 1986 - 1989 </span>
             <span class="blanco">| CREADOR: </span>
             <span class="gris"> Akira Toriyama |</span>
             <span class="blanco"> TEMPORADAS:</span>
             <span class="gris"> 1 (153 Capitulos)</span>
-          </h4>
+          </h3>
           <!-- Descripción de la serie -->
-          <section class="parrafo">
+          <div class="parrafo">
               <p>
                   'Dragon Ball' la legendaria serie de anime que narra las aventuras de Goku en su búsqueda de las Esferas del Dragón.
                   Prepárate para adentrarte en un mundo lleno de increibles combates, amistad inquebrantable y un viaje épico que ha cautivado a audiencias de todas las edades en todo el mundo.
               </p>
-          </section>
+            </div>
         
         <!-- Botón para ver la serie -->  
         <button class="serie-button" aria-label="Ver ahora Dragon Ball" onclick="window.location.href='PaginaDragonBall.html'"><i class="fa-solid fa-play"></i> Ver Ahora</button>
         
         <!-- Galería de imágenes -->
-        <h2>Galería De Imagenes</h2>
+        <p class="Galeria-Texto">Galería De Imagenes</p>
         <div class="galeria" onmousemove="scrollGallery(event)">
           <div class="scroll-container">
-              <img class="item_imagen" src="/Imagenes/1.Imagen-Galeria.webp" alt="Imagen de primer encuentro entre Goku y Bulma" onclick="expandirImagen(this)">
-              <img class="item_imagen" src="/Imagenes/2.Imagen-Galeria.webp" alt="Imagen de Goku mostrando la esfera del dragón de cuatro estrellas a Bulma y al Maestro Roshi" onclick="expandirImagen(this)">
-              <img class="item_imagen" src="/Imagenes/3.Imagen-Galeria.webp" alt="Imagen de Goku vs Tao Pai Pai" onclick="expandirImagen(this)">
-              <img class="item_imagen" src="/Imagenes/4.Imagen-Galeria.webp" alt="Imagen de Goku y Ten Shin Han contra el Gran Rey Demonio Piccolo" onclick="expandirImagen(this)">
-              <img class="item_imagen" src="/Imagenes/5.Imagen-Galeria.webp" alt="Imagen de Goku y su abuelo Son Gohan" onclick="expandirImagen(this)">
-              <img class="item_imagen" src="/Imagenes/6.Imagen-Galeria.webp" alt="Imagen de Goku, Krilin y el Maestro Roshi entrenando" onclick="expandirImagen(this)">
+              <img class="item_imagen" src="/Imagenes/1.Imagen-Galeria.webp" alt="Imagen de primer encuentro entre Goku y Bulma" loading="lazy" onclick="expandirImagen(this)">
+              <img class="item_imagen" src="/Imagenes/2.Imagen-Galeria.webp" alt="Imagen de Goku mostrando la esfera del dragón de cuatro estrellas a Bulma y al Maestro Roshi" loading="lazy" onclick="expandirImagen(this)">
+              <img class="item_imagen" src="/Imagenes/3.Imagen-Galeria.webp" alt="Imagen de Goku vs Tao Pai Pai" loading="lazy" onclick="expandirImagen(this)">
+              <img class="item_imagen" src="/Imagenes/4.Imagen-Galeria.webp" alt="Imagen de Goku y Ten Shin Han contra el Gran Rey Demonio Piccolo" loading="lazy" onclick="expandirImagen(this)">
+              <img class="item_imagen" src="/Imagenes/5.Imagen-Galeria.webp" alt="Imagen de Goku y su abuelo Son Gohan" loading="lazy" onclick="expandirImagen(this)">
+              <img class="item_imagen" src="/Imagenes/6.Imagen-Galeria.webp" alt="Imagen de Goku, Krilin y el Maestro Roshi entrenando" loading="lazy" onclick="expandirImagen(this)">
             </div>
         </div>
 
@@ -133,11 +145,12 @@
 
       <!-- Imagen de goku a la derecha -->   
       <div class="Imagen-Derecha">
-        <img class="imagen-goku" src="/Imagenes/goku.png" />
+        <img class="imagen-goku" loading="lazy" src="/Imagenes/goku.webp" alt="Imagen de Goku Niño posando con su baculo mágico">
       </div>
 
     </main>
+    
 
     <!-- Conexión con JavaScript -->  
-    <script async src="script.js"></script>
+    <script defer src="script-Dragon.js"></script>
   </body>
