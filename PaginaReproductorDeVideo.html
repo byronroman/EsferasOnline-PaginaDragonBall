@@ -105,17 +105,19 @@
             <track label="English" kind="subtitles" src="./Inglés.vtt" srclang="en">
             <track label="Español" kind="subtitles" src="./Español.vtt" srclang="en">
           </video>
-          <button class="button-82-pushable" id="skipIntroButton" role="button">
-            <span class="button-82-shadow"></span>
-            <span class="button-82-edge"></span>
-            <span class="button-82-front text">  <!-- Omitir intro - canción Dragon Ball -->
-              Omitir Introducción
-            </span>
-          </button>
-          
-          <button class="button-82-pushable" id="skipOutroButton" role="button">
-            <span class="button-82-shadow"></span>
-            <span class="button-82-edge"></span>
+          <label for="skipIntroButton">Omitir Introducción</label>
+            <button class="button-82-pushable" id="skipIntroButton" role="button">
+              <span class="button-82-shadow"></span>
+              <span class="button-82-edge"></span>
+              <span class="button-82-front text">  <!-- Omitir intro - canción Dragon Ball -->
+                Omitir Introducción
+              </span>
+            </button>
+
+            <label for="skipOutroButton">Omitir Outro</label>
+            <button class="button-82-pushable" id="skipOutroButton" role="button">
+              <span class="button-82-shadow"></span>
+              <span class="button-82-edge"></span>
             <span class="button-82-front text"> <!-- Omitir outro - canción Dragon Ball -->
               Omitir Outro
             </span>
@@ -126,9 +128,9 @@
           <button class="boton-accion">
             <i class="material-icons">skip_previous</i> Anterior
           </button>
-          <button class="boton-accion">
+          <a href="PaginaDragonBall.html" class="boton-accion">
             <i class="material-icons">menu_book</i> Capítulos
-          </button>
+          </a>
           <button class="boton-accion">
             <i class="material-icons">skip_next</i> Siguiente
           </button>
@@ -137,12 +139,17 @@
 
     <!-- Descripción del capitulo -->
     <article class="Info-Capitulo">
-      <h1 class="Titulo-Capitulo">Capítulo 1: El secreto de la esfera del dragón</h1>
-      <p class="Descripcion-Capitulo">son Gokū, un huérfano joven pero fuerte que vive solo en el Monte Paoz, y Bulma, una adolescente que busca siete esferas místicas, se unen cuando ella lo atropella mientras conducía un automóvil. Las esferas que Bulma está buscando, conocidas como las Esferas del Dragón, convocan al otorgante de deseos, Dios Dragón. Antes de morir, el abuelo de Gokū le regala la esfera de cuatro estrellas, la Sūshinchū. Bulma, que ya tiene dos de las esferas, deja a Gokū que se una a ella, para así poder conseguir su fuerza y su Sūshinchū. Bulma busca las esferas mágicas con un artefacto llamado Radar del Dragón.</p>
-      <div class="card-image">
-        <img src="Imagenes/Poster%201.webp" alt="Imagen de Dragon Ball" loading="lazy">
+      <h1 class="Titulo-Capitulo">Dragon Ball: El secreto de la esfera del dragón</h1>
+      <div class="Descripcion-y-Card">
+        <p class="Descripcion-Capitulo">Son Gokū, un huérfano joven pero fuerte que vive solo en el Monte Paoz, y Bulma, una adolescente que busca siete esferas místicas, se unen cuando ella lo atropella mientras conducía un automóvil. Las esferas que Bulma está buscando, conocidas como las Esferas del Dragón, convocan al otorgante de deseos, Dios Dragón. Antes de morir, el abuelo de Gokū le regala la esfera de cuatro estrellas, la Sūshinchū. Bulma, que ya tiene dos de las esferas, deja a Gokū que se una a ella, para así poder conseguir su fuerza y su Sūshinchū. Bulma busca las esferas mágicas con un artefacto llamado Radar del Dragón.</p>
+        <div class="card-image">
+          <img src="Imagenes/Poster Dragon Ball 1.webp" alt="Imagen de Dragon Ball" loading="lazy">
+        </div>
       </div>
     </article>
+    
+    
+    
 
   </main>
   <script src="/script-Reproductor.js"></script>

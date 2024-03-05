@@ -47,6 +47,7 @@ main {
   transition: width var(--transition-speed) ease;
   z-index: 2;
   height: 100%;
+  width: 5rem; /* Ancho fijo */
 }
 
 /* Estilos de la lista de navegación */
@@ -76,8 +77,8 @@ main {
   height: 5rem;
   color: var(--text-primary);
   text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
-  transition: var(--transition-speed);
+  filter: grayscale(100%) opacity(0.7); 
+  transition: background var(--transition-speed), color var(--transition-speed);
 }
 
 .nav-link:hover {
@@ -94,7 +95,7 @@ main {
 
 /* Estilos de los iconos del enlace */
 .nav-link svg {
-  min-width: 2rem;
+  max-width: 2rem;
   margin: 0 1.5rem;
 }
 
@@ -124,11 +125,6 @@ main {
   position: absolute;
   left: -999rem;
   transition: var(--transition-speed);
-}
-
-/* Rotación del icono del logotipo al pasar el cursor */
-.navbar:hover .logo svg {
-  transform: rotate(-180deg);
 }
 
 /* Estilos adicionales del icono del enlace */
