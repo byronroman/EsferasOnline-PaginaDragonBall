@@ -301,35 +301,6 @@ main {
 /* Para dispositivos móviles o pantallas pequeñas */
 @media only screen and (max-width: 37.5rem) {
 
-  .mobile-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--text-secondary);
-    font-size: 1rem;
-    letter-spacing: 0.3ch;
-    width: auto;
-    padding: 0.5rem 1rem;
-    z-index: 999; 
-  }
-  
-  .mobile-logo a {
-    text-decoration: none; 
-    display: flex; 
-    align-items: center; 
-  }
-
-  .mobile-logo .nav-link svg {
-    fill: rgb(231, 212, 35); 
-    margin-right: 0.5rem; 
-  }
-
   .navbar {
     bottom: 0;
     width: 100vw;
