@@ -207,8 +207,8 @@ main {
 
   main {
     margin-top: 0rem; 
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 0rem;
+    margin-left: 0rem;
     margin-bottom: 8rem;
     overflow-y: hidden;
   }
@@ -223,8 +223,8 @@ main {
 
   .Informacion-Nosotros {
     width: calc(100% - 2rem); 
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 
   .Informacion-Perfil h1 {
