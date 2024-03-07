@@ -1,0 +1,276 @@
+/* Variables globales */
+:root {
+  font-size: 1rem;
+  font-family: 'League Spartan';
+  --text-primary: #b6b6b6;
+  --text-secondary: #cfe600;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 0.6s;
+}
+
+/* Estilos generales del cuerpo */
+body {
+  background-image: url("Imagenes/Fondo-principal.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+/* Estilos de la barra de desplazamiento para WebKit */
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #b8b149;
+}
+
+
+/* Estilos de la barra de navegación */
+.navbar {
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: width var(--transition-speed) ease;
+  z-index: 2;
+  height: 100%;
+  width: 5rem; /* Ancho fijo */
+}
+
+/* Estilos de la lista de navegación */
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/* Estilos de los elementos de navegación */
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+/* Estilos de los enlaces de navegación */
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7); 
+  transition: background var(--transition-speed), color var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+/* Estilos del texto del enlace */
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+/* Estilos de los iconos del enlace */
+.nav-link svg {
+  max-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+/* Estilos del logotipo */
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+/* Estilos del icono del logotipo */
+.logo svg {
+  fill: rgb(209, 206, 15);
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+
+/* Estilos del texto del logotipo */
+.logo-text {
+  display: inline;
+  position: absolute;
+  left: -999rem;
+  transition: var(--transition-speed);
+}
+
+/* Estilos adicionales del icono del enlace */
+.nav-link svg {
+  fill: rgb(143, 143, 143);
+}
+
+/* Estilos adicionales del icono del logotipo */
+.logo svg {
+  fill: rgb(209, 206, 15);
+}
+
+/* Sección de texto e imagen */
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh; 
+  max-width: 100vw;
+}
+
+/* Estilos de la información de la serie */
+.Informacion-Serie {
+  max-width: 100vw;
+}
+
+/* Estilos del título de la serie */
+.Informacion-Serie h2 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0rem;
+}
+
+.Informacion {
+  color: rgb(239, 255, 17);
+}
+
+/* Estilos del párrafo */
+.parrafo {
+  color: #b6b6b6;
+  background-color: rgba(17, 17, 17, 0.5);
+  padding: 0.6rem;
+  max-width: 100%;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+}
+
+.parrafo p {
+  margin: 0;
+}
+
+/* Estilos del botón de la serie */
+.serie-button {
+  margin-top: 1.5rem;
+  background-color: #0077cc; 
+  color: #ffffff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Para dispositivos móviles o pantallas pequeñas */
+@media only screen and (max-width: 37.5rem) {
+
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  /* Ocultar el logo existente en el navbar en dispositivos móviles */
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin-top: 0rem; /* Ajuste del margen superior para evitar superposición con el navbar */
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 8rem;
+    overflow-y: auto; /* Cambiar a auto para que aparezca la barra solo cuando sea necesario */
+    height: 100%; /* Limitar la altura para que el contenido sea scrollable */
+  }
+
+  .nav-link svg {
+    fill: rgb(231, 212, 35);
+  }
+
+  .texto-span {
+    overflow: hidden;
+  }
+
+  /* Establecer el ancho y margen de Informacion-Serie cuando la imagen se oculta */
+  .Informacion-Serie {
+    width: calc(100% - 2rem); 
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+.custom-color {
+  background-color: grey;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+
+
+
+/* Pantallas más largas */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100%;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo svg {
+    margin-left: 12rem;
+  }
+
+  .navbar:hover .logo-text {
+    left: 0;
+  }
+
+  .texto-span {
+    overflow: hidden;
+  }
+}
