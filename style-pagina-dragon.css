@@ -325,7 +325,7 @@ main {
   }
 
   .texto-span {
-    overflow: hidden;
+    overflow: visible; 
   }
 
   .imagen-goku {
@@ -335,9 +335,12 @@ main {
   /* Establecer el ancho y margen de Informacion-Serie cuando la imagen se oculta */
   .Informacion-Serie {
     width: calc(100% - 2rem); 
-    margin: 0 1rem; 
+    margin-right: 1rem;
+    margin-left: 1rem;
+    max-height: 100vh;
   }
 }
+
 
 
 /* Pantallas más largas */

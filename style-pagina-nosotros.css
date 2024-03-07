@@ -213,12 +213,7 @@ main {
   }
 
   main {
-    margin-top: 3rem; 
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 8rem;
-    overflow-y: auto; 
-    height: 100%; 
+    margin: 0;
   }
 
   .nav-link svg {
