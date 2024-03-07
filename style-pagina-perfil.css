@@ -210,7 +210,7 @@ main {
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 8rem;
-    overflow-y: auto; 
+    overflow-y: hidden; 
     height: 100%; 
   }
 
