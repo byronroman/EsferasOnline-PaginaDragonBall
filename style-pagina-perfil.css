@@ -210,8 +210,7 @@ main {
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 8rem;
-    overflow-y: hidden; 
-    height: 100%; 
+    overflow-y: hidden;
   }
 
   .nav-link svg {
