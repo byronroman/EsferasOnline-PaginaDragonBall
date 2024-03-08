@@ -178,6 +178,10 @@ main {
   margin: 0;
 }
 
+strong {
+  color: #cfe600;
+}
+
 /* Estilos del botón de la nosotros */
 .nosotros-button {
   margin-top: 1.5rem;
