@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Dragon Ball</title>
+    <title>Página Nosotros</title>
     <!--  Logo de la Página en el navegador  -->
     <link rel="icon" href="Imagenes/certificate-solid.svg" sizes="any" type="image/svg+xml">
-    <meta name="description" content="Página principal de Dragon Ball. Puedes ver información de tu serie favorita.">
+    <meta name="description" content="Página Sobre Nosotros. Creador de la página: Byron Román">
     <!-- CSS -->
-    <link rel="stylesheet" href="style-pagina-dragon.css">
+    <link rel="stylesheet" href="/CSS/style-pagina-nosotros.css">
     <!-- Consolidación de preconexiones -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
@@ -82,52 +82,36 @@
 
     <!-- Contenido principal -->
     <main>
-     <!-- Información de la serie -->
-     <div class="Informacion-Serie">
-        <h2>DRAGON BALL</h2>
-          <h3 class="serie-info">
-            <span class="blanco">DURACIÓN: </span>
-            <span class="gris"> 1986 - 1989 </span>
-            <span class="blanco">| CREADOR: </span>
-            <span class="gris"> Akira Toriyama |</span>
-            <span class="blanco"> TEMPORADAS:</span>
-            <span class="gris"> 1 (153 Capitulos)</span>
+     <!-- Información de nosotros -->
+     <div class="Informacion-Nosotros">
+        <h2>Sobre nosotros</h2>
+          <h3 class="nosotros-info">
+            <span class="Informacion"> Creador de "EsferasOnline" </span>
           </h3>
-          <!-- Descripción de la serie -->
+          <!-- Descripción de la página y creador -->
           <div class="parrafo">
               <p>
-                  'Dragon Ball' la legendaria serie de anime que narra las aventuras de Goku en su búsqueda de las Esferas del Dragón.
-                  Prepárate para adentrarte en un mundo lleno de increibles combates, amistad inquebrantable y un viaje épico que ha cautivado a audiencias de todas las edades en todo el mundo.
+                Detrás de 'EsferasOnline' se encuentra Byron Román, un estudiante de Ingeniería en Informática con una visión innovadora. Este proyecto nació con el objetivo principal de enriquecer la educación y el desarrollo de habilidades del propio creador, al mismo tiempo que proporciona una plataforma para la visualización de capítulos de Dragon Ball.
+                <br>
+                <br>
+                Actualmente, la página cuenta únicamente con un capítulo disponible, en cumplimiento de los derechos de autor de los creadores de Dragon Ball y solamente para demostrar su funcionamiento.
+                <br>
+                <br>
+                'EsferasOnline' representa el esfuerzo personal de Byron por crear una experiencia única. Si deseas conocer más sobre este increible proyecto y su creador, te invitamos cordialmente a explorar los enlaces que se encuentran a continuación.
               </p>
             </div>
         
-        <!-- Botón para ver la serie -->  
-        <button class="serie-button" aria-label="Ver ahora Dragon Ball" onclick="window.location.href='PaginaReproductorDeVideo.html'"><i class="fa-solid fa-play"></i> Ver Ahora</button>
+        <!-- Botón para ir a Linkedin -->
+        <button class="nosotros-button" aria-label="Ir hacia Linkedin del creador" onclick="window.location.href='https://www.linkedin.com/in/byroman/'">
+          <i class="fab fa-linkedin"></i> Ir al perfil
+        </button>
 
-        
-        <!-- Galería de imágenes -->
-        <p class="Galeria-Texto">Galería De Imagenes</p>
-        <div class="galeria" onmousemove="scrollGallery(event)">
-          <div class="scroll-container">
-              <img class="item_imagen" src="/Imagenes/1.Imagen-Galeria.webp" alt="Imagen de primer encuentro entre Goku y Bulma" loading="lazy" onclick="expandirImagen(this)">
-              <img class="item_imagen" src="/Imagenes/2.Imagen-Galeria.webp" alt="Imagen de Goku mostrando la esfera del dragón de cuatro estrellas a Bulma y al Maestro Roshi" loading="lazy" onclick="expandirImagen(this)">
-              <img class="item_imagen" src="/Imagenes/3.Imagen-Galeria.webp" alt="Imagen de Goku vs Tao Pai Pai" loading="lazy" onclick="expandirImagen(this)">
-              <img class="item_imagen" src="/Imagenes/4.Imagen-Galeria.webp" alt="Imagen de Goku y Ten Shin Han contra el Gran Rey Demonio Piccolo" loading="lazy" onclick="expandirImagen(this)">
-              <img class="item_imagen" src="/Imagenes/5.Imagen-Galeria.webp" alt="Imagen de Goku y su abuelo Son Gohan" loading="lazy" onclick="expandirImagen(this)">
-              <img class="item_imagen" src="/Imagenes/6.Imagen-Galeria.webp" alt="Imagen de Goku, Krilin y el Maestro Roshi entrenando" loading="lazy" onclick="expandirImagen(this)">
-            </div>
-        </div>
+        <!-- Botón para ir a GitHub -->
+        <button class="nosotros-button custom-color" aria-label="Ir al repositorio en GitHub" onclick="window.location.href='https://github.com/byronroman/EsferasOnline-PaginaDragonBall'">
+          <i class="fab fa-github"></i> Ver repositorio
+        </button>
 
-    </div>
-
-      <!-- Imagen de goku a la derecha -->   
-      <div class="Imagen-Derecha">
-        <img class="imagen-goku" loading="lazy" src="/Imagenes/goku.webp" alt="Imagen de Goku Niño posando con su baculo mágico">
-      </div>
 
     </main>
-    
 
-    <!-- Conexión con JavaScript -->  
-    <script defer src="script-Dragon.js"></script>
   </body>

@@ -11,7 +11,7 @@
 
 /* Estilos generales del cuerpo */
 body {
-  background-image: url("Imagenes/Fondo-Kamehouse.webp");
+  background-image: url("/Imagenes/Fondo-Kamehouse.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;

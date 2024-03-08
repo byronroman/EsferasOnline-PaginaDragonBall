@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Nosotros</title>
+    <title>Página principal</title>
     <!--  Logo de la Página en el navegador  -->
     <link rel="icon" href="Imagenes/certificate-solid.svg" sizes="any" type="image/svg+xml">
-    <meta name="description" content="Página Sobre Nosotros. Creador de la página: Byron Román">
+    <meta name="description" content="Página principal de Dragon Ball. Puedes seleccionar tu serie o contenido favorito.">
     <!-- CSS -->
-    <link rel="stylesheet" href="style-pagina-nosotros.css">
-    <!-- Consolidación de preconexiones -->
+    <link rel="stylesheet" href="/CSS/style-pagina-principal.css">
+    <!-- Fuentes de Google Fonts preconnect -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FontAwesome CDN preconnect -->
     <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <!-- FontAwesome Kit -->
     <script src="https://kit.fontawesome.com/d4aceda794.js" crossorigin="anonymous"></script>
-</head>
+  </head>
   
   <body>
     <!-- Barra de navegación -->
@@ -67,7 +69,7 @@
               <span class="link-text texto-span">Nosotros</span>
             </a>
           </li>
-  
+          
           <!-- Elemento "Perfil" de la barra de navegación -->
         <li class="nav-item">
           <a href="PaginaPerfil.html" class="nav-link" aria-label="Ir a la página de perfil">
@@ -82,36 +84,111 @@
 
     <!-- Contenido principal -->
     <main>
-     <!-- Información de nosotros -->
-     <div class="Informacion-Nosotros">
-        <h2>Sobre nosotros</h2>
-          <h3 class="nosotros-info">
-            <span class="Informacion"> Creador de "EsferasOnline" </span>
-          </h3>
-          <!-- Descripción de la página y creador -->
-          <div class="parrafo">
-              <p>
-                Detrás de 'EsferasOnline' se encuentra Byron Román, un estudiante de Ingeniería en Informática con una visión innovadora. Este proyecto nació con el objetivo principal de enriquecer la educación y el desarrollo de habilidades del propio creador, al mismo tiempo que proporciona una plataforma para la visualización de capítulos de Dragon Ball.
-                <br>
-                <br>
-                Actualmente, la página cuenta únicamente con un capítulo disponible, en cumplimiento de los derechos de autor de los creadores de Dragon Ball y solamente para demostrar su funcionamiento.
-                <br>
-                <br>
-                'EsferasOnline' representa el esfuerzo personal de Byron por crear una experiencia única. Si deseas conocer más sobre este increible proyecto y su creador, te invitamos cordialmente a explorar los enlaces que se encuentran a continuación.
-              </p>
+      <!-- Slide de las series Dragon Ball -->
+      <div class="slider-container">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="/Imagenes/Dragon-Ball.webp" alt="Imagen de Dragon Ball" loading="lazy">
+                    <span class="slider-title">Dragon Ball</span>
+                    <button class="slider-button" onclick="window.location.href='PaginaDragonBall.html'"><i class="fa-solid fa-play"></i> Ver Ahora</button>
+                </div>
+                <div class="item">
+                    <img src="/Imagenes/Dragon-Ball-Z.webp" alt="Imagen de Dragon Ball Z" loading="lazy">
+                    <span class="slider-title">Dragon Ball Z</span>
+                    <button class="slider-button custom-color"><i class="fa-solid fa-person-digging"></i> Disponible Próximamente</button>
+                </div>
+                <div class="item">
+                    <img src="/Imagenes/Dragon-Ball-Super.webp" alt="Imagen de Dragon Ball Super" loading="lazy">
+                    <span class="slider-title">Dragon Ball Super</span>
+                    <button class="slider-button custom-color"><i class="fa-solid fa-person-digging"></i> Disponible Próximamente</button>
+                </div>
             </div>
-        
-        <!-- Botón para ir a Linkedin -->
-        <button class="nosotros-button" aria-label="Ir hacia Linkedin del creador" onclick="window.location.href='https://www.linkedin.com/in/byroman/'">
-          <i class="fab fa-linkedin"></i> Ir al perfil
-        </button>
+            <!-- Botones para cambiar el slide -->
+              <div class="buttons">
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+              </div>
 
-        <!-- Botón para ir a GitHub -->
-        <button class="nosotros-button custom-color" aria-label="Ir al repositorio en GitHub" onclick="window.location.href='https://github.com/byronroman/EsferasOnline-PaginaDragonBall'">
-          <i class="fab fa-github"></i> Ver repositorio
-        </button>
+          <!-- Puntos blancos abajo en el slide -->
+          <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+        </div>
+      </div>
 
-
+    <!-- Sección de cards series Dragon Ball -->
+    <div class="container">
+      <h1>RECOMENDADO PARA TI</h1>
+  
+      <div class="card-container">
+          <div class="card">
+              <div class="card-image">
+                <img src="/Imagenes/Poster%201.webp" alt="Imagen de Dragon Ball" loading="lazy">
+              </div>
+              <div class="hover-content">
+                  <p>Dragon Ball</p>
+                  <button class="card-button card-custom-color" onclick="window.location.href='PaginaDragonBall.html'"><i class="fa-solid fa-play"></i> Ver Ahora</button>
+              </div>
+          </div>
+  
+          <div class="card">
+              <div class="card-image">
+                  <img src="/Imagenes/Poster%202.webp" alt="Imagen de Dragon Ball Z" loading="lazy">
+              </div>
+              <div class="hover-content">
+                  <p>Dragon Ball Z</p>
+                  <button class="card-button"><i class="fa-solid fa-person-digging"></i> Disponible Próximamente</button>
+              </div>
+          </div>
+  
+          <div class="card">
+              <div class="card-image">
+                  <img src="/Imagenes/Poster%203.webp" alt="Imagen de Dragon Ball Z Kai" loading="lazy">
+              </div>
+              <div class="hover-content">
+                  <p>Dragon Ball Z Kai</p>
+                  <button class="card-button"><i class="fa-solid fa-person-digging"></i> Disponible Próximamente</button>
+              </div>
+          </div>
+  
+          <div class="card">
+              <div class="card-image">
+                  <img src="/Imagenes/Poster%204.webp" alt="Imagen de Dragon Ball GT" loading="lazy">
+              </div>
+              <div class="hover-content">
+                  <p>Dragon Ball GT</p>
+                  <button class="card-button"><i class="fa-solid fa-person-digging"></i> Disponible Próximamente</button>
+              </div>
+          </div>
+  
+          <div class="card">
+              <div class="card-image">
+                  <img src="/Imagenes/Poster%205.webp" alt="Imagen de Dragon Ball Super" loading="lazy">
+              </div>
+              <div class="hover-content">
+                  <p>Dragon Ball Super</p>
+                  <button class="card-button"><i class="fa-solid fa-person-digging"></i> Disponible Próximamente</button>
+              </div>
+          </div>
+  
+          <div class="card">
+              <div class="card-image">
+                  <img src="/Imagenes/Poster%206.webp" alt="Imagen de Dragon Ball Daima" loading="lazy">
+              </div>
+              <div class="hover-content">
+                  <p>Dragon Ball Daima</p>
+                  <button class="card-button"><i class="fa-solid fa-person-digging"></i> Disponible Próximamente</button>
+              </div>
+          </div>
+          
+      </div>
+    </div>
+    
     </main>
-
+    
+  <!-- Conexión con JavaScript -->  
+    <script async src="/JavaScript/script-Principal.js"></script>
   </body>

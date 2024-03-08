@@ -11,13 +11,15 @@
 
 /* Estilos generales del cuerpo */
 body {
-  background-image: url("Imagenes/Fondo-principal.webp");
+  background-image: url("/Imagenes/Fondo-principal.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   color: rgb(255, 255, 255);
-  margin: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 5rem;
   padding: 0;
 }
 
@@ -142,7 +144,8 @@ main {
   width: 92vw; 
   max-width: 100%;
   height: calc(40vh + 1.563rem); 
-  margin: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
   position: relative;
   overflow: hidden;
   border-radius: 1rem;

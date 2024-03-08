@@ -11,13 +11,13 @@
 
 /* Estilos generales del cuerpo */
 body {
-  background-image: url("Imagenes/Fondo-principal.webp");
+  background-image: url("/Imagenes/Fondo-principal.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   color: rgb(255, 255, 255);
-  margin-top: 0;
+  margin-top: 5rem;
   margin-right: 0;
   margin-left: 0;
   padding: 0;
@@ -147,46 +147,53 @@ main {
   max-width: 100vw;
 }
 
-/* Estilos de la información de perfil de usuario */
-.Informacion-Perfil {
-  max-width: 80%;
-  margin: auto; 
-  background-color: rgb(219, 219, 219);
-  padding: 2rem;
-  border-radius: 10px; 
-  text-align: center; 
+/* Estilos de la información de la nosotros */
+.Informacion-Nosotros {
+  max-width: 100vw;
 }
 
-/* Estilos de la imagen de perfil */
-.imagen-perfil {
-  width: 50%; 
-  max-width: 40rem; 
-  height: auto; 
-  border-radius: 50%; 
-  margin-bottom: 1rem; 
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+/* Estilos del título de la nosotros */
+.Informacion-Nosotros h2 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0rem;
 }
 
-/* Estilos del título */
-.Informacion-Perfil h1 {
-  font-size: 2em; 
-  margin-bottom: 0.5rem; 
-  color: #e5ff00;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+.Informacion {
+  color: rgb(239, 255, 17);
 }
 
 /* Estilos del párrafo */
-.Informacion-Perfil p {
-  color: #444; 
-  font-size: 1em; 
-  line-height: 1.5; 
-  margin: 0; 
+.parrafo {
+  color: #b6b6b6;
+  background-color: rgba(17, 17, 17, 0.5);
+  padding: 0.6rem;
+  max-width: 100%;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
 }
 
+.parrafo p {
+  margin: 0;
+}
 
+/* Estilos del botón de la nosotros */
+.nosotros-button {
+  margin-top: 1.5rem;
+  background-color: #0077cc; 
+  color: #ffffff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
 /* Para dispositivos móviles o pantallas pequeñas */
 @media only screen and (max-width: 37.5rem) {
+
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -218,16 +225,19 @@ main {
     overflow: hidden;
   }
 
-  .Informacion-Nosotros {
+  /* Establecer el ancho y margen de Informacion-nosotros */
+  .Informacion-nosotros {
     width: calc(100% - 2rem); 
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-  }
-
-  .Informacion-Perfil h1 {
-    font-size: 1.3em; 
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
+
+.custom-color {
+  background-color: grey;
+  font-size: 1.2rem;
+}
+
 
 /* Pantallas más largas */
 @media only screen and (min-width: 600px) {
