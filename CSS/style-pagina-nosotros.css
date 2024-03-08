@@ -17,7 +17,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: rgb(255, 255, 255);
-  margin-top: 5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   margin-right: 0;
   margin-left: 0;
   padding: 0;
@@ -139,18 +140,17 @@ main {
   margin-left: 5rem;
   padding: 1rem;
   padding-bottom: 10rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  max-height: max-content;
-  max-width: 100vw;
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 /* Estilos de la información de la nosotros */
 .Informacion-Nosotros {
   max-width: 100vw;
 }
+
 
 /* Estilos del título de la nosotros */
 .Informacion-Nosotros h2 {
